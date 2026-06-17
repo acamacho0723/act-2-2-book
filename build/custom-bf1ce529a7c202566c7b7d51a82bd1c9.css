@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Asegura que el cuerpo herede la fuente */
+body {
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+p {
+    text-align: justify;
+}
+
+/* Establece tamaño máximo para todas las imágenes dentro de bloques de notebook */
+div.myst-jp-nb-block img {
+    max-width: 30vw;
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Scrollbars personalizadas con color verde */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #c8e6c9;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+    background: #4CAF50;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #388e3c;
+}
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #4CAF50 #c8e6c9;
+}
+
+/* Define la fuente monoespaciada para el código */
+pre, code, .jp-CodeMirror-editor, .jp-InputArea-editor, .highlight, .jp-Cell-code,
+.CodeMirror pre, .input_area pre {
+    font-family: 'Menlo', 'Consolas', 'Courier New', monospace !important;
+}
+
+body > div.myst-top-nav.bg-white\/80.backdrop-blur.dark\:bg-stone-900\/80.shadow.dark\:shadow-stone-700.p-3.md\:px-8.sticky.w-full.top-0.z-30.min-h-\[60px\],
+body > div.myst-primary-sidebar.fixed.xl\:article-grid.grid-gap.xl\:w-full.xl\:pointer-events-none.overflow-auto.max-xl\:w-\[75vw\].max-xl\:max-w-\[350px\].max-xl\:\!top-0.max-xl\:h-screen.hidden.z-10 > div > div.myst-primary-sidebar-nav.flex-grow.py-6.overflow-y-auto.primary-scrollbar > nav.myst-primary-sidebar-toc.flex-grow.overflow-y-hidden.transition-opacity.ml-3.xl\:ml-0.mr-3.max-w-\[350px\] > div > a.block.break-words.focus\:outline.outline-blue-200.outline-2.rounded.myst-toc-item.p-2.my-1.rounded-lg.myst-toc-item-exact.bg-blue-300\/30.active {
+    background-color: #4CAF50 !important;
+    border-left-color: #6af66f !important;
+}
+
+/* Fuerza el color verde en el borde izquierdo de los bloques de código */
+.relative.myst-code.border-l-blue-400 {
+    border-left-color: #6af66f !important;
+}
+
+/* Cambia el color del icono del botón de copiar de azul a verde */
+.relative.myst-code .text-blue-400 {
+    color: #4CAF50 !important;
+}
+
+body > div.myst-top-nav.bg-white\/80.backdrop-blur.dark\:bg-stone-900\/80.shadow.dark\:shadow-stone-700.p-3.md\:px-8.sticky.w-full.top-0.z-30.min-h-\[60px\] > nav > div.flex.flex-row.xl\:min-w-\[19\.5rem\].mr-2.sm\:mr-7.justify-start.items-center.shrink-0 > a,
+body > div.myst-primary-sidebar.fixed.xl\:article-grid.grid-gap.xl\:w-full.xl\:pointer-events-none.overflow-auto.max-xl\:w-\[75vw\].max-xl\:max-w-\[350px\].max-xl\:\!top-0.max-xl\:h-screen.hidden.z-10 > div > div.myst-primary-sidebar-nav.flex-grow.py-6.overflow-y-auto.primary-scrollbar > nav.myst-primary-sidebar-toc.flex-grow.overflow-y-hidden.transition-opacity.ml-3.xl\:ml-0.mr-3.max-w-\[350px\] > div > a.block.break-words.focus\:outline.outline-blue-200.outline-2.rounded.myst-toc-item.p-2.my-1.rounded-lg.myst-toc-item-exact.bg-blue-300\/30.active,
+#radix-\:r0\: > ul > li.myst-outline-item.border-l-2.hover\:border-l-blue-500.text-blue-600.border-l-blue-500.bg-blue-50.dark\:bg-slate-800.myst-outline-item-active a {
+    color: white !important;
+}
